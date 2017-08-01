@@ -20,7 +20,7 @@ export class AppComponent implements OnInit, OnDestroy {
         // This native event is being called when we press the back button on Android
         android.on(AndroidApplication.activityDestroyedEvent, (args: AndroidActivityEventData) => {
             if (args.activity.toString().startsWith('com.tns.NativeScriptActivity')) {
-                console.log('Android acitivity destroyed');
+                console.log('Android activity destroyed');
             }
         });
     }
